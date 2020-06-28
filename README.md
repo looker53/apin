@@ -1,16 +1,17 @@
-## 快速使用
+This is a library aimed to testing web api simplely.
 
-步骤1：生成默认的 yaml 文件：
-```
-apin init
-```
-步骤2：运行用例, 可以不指定路径，可以指定文件夹或者文件：
+## Quick Start
 ```python
-apin.run()
-apin.run("/tests")
-apin.run("/tests/test_demo.yml")
+import apin
+apin.run('test_ref.yaml')
 ```
 
-## unittest 集成
-不和单元测试框架集成的话日志显示不好处理。 参考 httprunner 2.x
+You can enter the samples/ file dir and run the demo_run_yaml.py file.
+
+
+## TODO
+- generate default yaml file;
+- apin.run() without params run all cases;
+- unittest run, print assert result separately, ref to httprunner 2.x
+
 
