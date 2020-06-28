@@ -1,0 +1,22 @@
+# case info
+name: ""
+request:
+    url: http://httpbin.org/post
+    method: post
+    data:
+        username: demo
+        pwd: "123456"
+    headers:
+        user-agent: postman
+validators:
+    -
+        expected: demo
+        matcher: equal_to
+        path: form.username
+    -
+        expected: "http"
+        matcher: equal_to
+        path: url
+
+
+
